@@ -18,3 +18,9 @@
     --color-white: 0deg 0% 100%;
   }
 }
+
+@layer components {
+  .arrow {
+    @apply before:inline-block before:w-0 before:h-0 before:absolute before:border-[10px] before:border-solid before:border-transparent before:border-b-nwhite before:left-[95%] before:top-0 before:mt-[-20px];
+  }
+}
