@@ -19,10 +19,6 @@ module.exports = {
         barlow: ["Barlow", "sans-serif"],
         fraunces: ["Fraunces", "serif"],
       },
-      backgroundImage: {
-        "header-mobile": "url(/src/images/mobile/image-header.jpg)",
-        "header-desktop": "url(/src/images/desktop/image-header.jpg)",
-      },
     },
   },
   plugins: [],

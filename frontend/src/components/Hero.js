@@ -6,7 +6,7 @@ import { ReactComponent as ADown } from "../images/icon-arrow-down.svg";
 
 const Hero = () => {
   return (
-    <section className="relative">
+    <section className="relative md:col-span-2">
       <Navbar />
       <picture>
         <source media="(min-width: 768px)" srcSet={dorange} />
