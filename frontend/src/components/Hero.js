@@ -13,7 +13,7 @@ const Hero = () => {
         <source srcSet={morange} />
         <img className="-mt-24 object-center md:-mt-28" src={morange} alt="" />
       </picture>
-      <h1 className="absolute w-screen text-center top-[20%] uppercase   tracking-wider font-fraunces text-nwhite text-7xl">
+      <h1 className="absolute w-screen text-center top-[20%] uppercase   tracking-wider font-fraunces text-nwhite text-5xl md:text-7xl">
         We are creatives
       </h1>
       <div className="absolute top-[44%] left-[49%]">

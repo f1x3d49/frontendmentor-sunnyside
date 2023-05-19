@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        pred: "hsl(var(--color-sred) / <alpha-value>)",
+        sred: "hsl(var(--color-sred) / <alpha-value>)",
         pyellow: "hsl(var(--color-yellow) / <alpha-value>)",
         ddcyan: "hsl(var(--color-ddcyan) / <alpha-value>)",
         dblue: "hsl(var(--color-dblue) / <alpha-value>)",
