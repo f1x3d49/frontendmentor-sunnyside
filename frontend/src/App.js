@@ -4,11 +4,12 @@ import degg from "./images/desktop/image-transform.jpg";
 import megg from "./images/mobile/image-transform.jpg";
 import dcup from "./images/desktop/image-stand-out.jpg";
 import mcup from "./images/mobile/image-stand-out.jpg";
-import PhotoCard from "./components/PhotoCard";
+import CherryCard from "./components/CherryCard";
+import OrangeCard from "./components/OrangeCard";
 
 function App() {
   return (
-    <div className="w-screen h-screen md:grid md:grid-cols-2 md:grid-flow-dense bg-nwhite overflow-x-hidden">
+    <div className="w-screen h-screen md:grid md:grid-cols-2 md:grid-flow-dense bg-nwhite ">
       <Hero />
       {/* First row */}
       <section className="md:col-start-2">
@@ -44,7 +45,8 @@ function App() {
         content="Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places."
         color="sred"
       />
-      <PhotoCard img="image-graphic-design.jpg" title="Graphic Design" />
+      <CherryCard />
+      <OrangeCard />
     </div>
   );
 }
