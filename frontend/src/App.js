@@ -6,6 +6,10 @@ import dcup from "./images/desktop/image-stand-out.jpg";
 import mcup from "./images/mobile/image-stand-out.jpg";
 import CherryCard from "./components/CherryCard";
 import OrangeCard from "./components/OrangeCard";
+import ClientCard from "./components/ClientCard";
+import emily from "./images/image-emily.jpg";
+import thomas from "./images/image-thomas.jpg";
+import jennie from "./images/image-jennie.jpg";
 
 function App() {
   return (
@@ -47,6 +51,34 @@ function App() {
       />
       <CherryCard />
       <OrangeCard />
+      {/* Testimonials */}
+      <div className="flex flex-col items-center pt-12 gap-16 md:col-span-2">
+        <h2 className="font-fraunces text-base tracking-[0.15rem] uppercase text-gblue">
+          Client Testimonials
+        </h2>
+        <div className="md:flex">
+          <ClientCard
+            portrait={emily}
+            content="We put trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit."
+            name="Emily R."
+            title="Marketing Director"
+          />
+          <ClientCard
+            portrait={thomas}
+            content="Sunnyside's enthusiasm coupled with their keen interest in our brand's succes made it a satisfying and enjoyable experience."
+            name="Thomas S."
+            title="Chief Operating Officer"
+          />
+          <ClientCard
+            portrait={jennie}
+            content="Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!"
+            name="Jennie F."
+            title="Business Owner"
+          />
+        </div>
+      </div>
+      {/* 4 photos */}
+      <div className="grid grid-cols-2 md:grid-cols-2"></div>
     </div>
   );
 }
