@@ -10,10 +10,20 @@ import ClientCard from "./components/ClientCard";
 import emily from "./images/image-emily.jpg";
 import thomas from "./images/image-thomas.jpg";
 import jennie from "./images/image-jennie.jpg";
+import mbottles from "./images/mobile/image-gallery-milkbottles.jpg";
+import dbottles from "./images/desktop/image-gallery-milkbottles.jpg";
+import ImageComponent from "./components/ImageComponent";
+import morange from "./images/mobile/image-gallery-orange.jpg";
+import dorange from "./images/desktop/image-gallery-orange.jpg";
+import mcone from "./images/mobile/image-gallery-cone.jpg";
+import dcone from "./images/desktop/image-gallery-cone.jpg";
+import mcubes from "./images/mobile/image-gallery-sugar-cubes.jpg";
+import dcubes from "./images/desktop/image-gallery-sugarcubes.jpg";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="w-screen h-screen md:grid md:grid-cols-2 md:grid-flow-dense bg-nwhite ">
+    <div className="w-screen h-screen md:grid md:grid-cols-2 md:grid-flow-dense overflow-x-hidden bg-nwhite ">
       <Hero />
       {/* First row */}
       <section className="md:col-start-2">
@@ -78,7 +88,13 @@ function App() {
         </div>
       </div>
       {/* 4 photos */}
-      <div className="grid grid-cols-2 md:grid-cols-2"></div>
+      <div className="grid grid-cols-2 md:grid-cols-4 md:col-span-2">
+        <ImageComponent desktop={dbottles} mobile={mbottles} />
+        <ImageComponent desktop={dorange} mobile={morange} />
+        <ImageComponent desktop={dcone} mobile={mcone} />
+        <ImageComponent desktop={dcubes} mobile={mcubes} />
+      </div>
+      <Footer />
     </div>
   );
 }

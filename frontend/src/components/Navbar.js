@@ -6,7 +6,7 @@ import { ReactComponent as Hamburger } from "../images/icon-hamburger.svg";
 const Navbar = () => {
   return (
     <nav className="relative flex justify-between items-center z-10 py-3 px-8 ">
-      <AgencyLogo />
+      <AgencyLogo className="fill-nwhite" />
       <ul className="hidden md:flex select-none">
         <li className="p-4 font-barlow font-semibold text-nwhite text-lg hover:cursor-pointer">
           About
